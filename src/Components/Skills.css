@@ -1,0 +1,85 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+.skills {
+  padding: 80px 20px;
+  text-align: center;
+
+}
+
+.skills-title {
+  font-size: clamp(28px, 3vw, 42px);
+  margin-bottom: 50px;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+.skill-card {
+  padding: 25px 15px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  perspective: 800px;
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+.skill-img img {
+  width: 70px;
+  height: 50px;
+  object-fit: contain;
+
+  transition: transform 0.4s ease;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+.skill-card p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* HOVER EFFECT */
+/* ========================= */
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(90, 107, 255, 0.5);
+
+  background: linear-gradient(135deg, #5a6bff, #6a91df);
+  color: white;
+}
+
+/* image animation */
+.skill-card:hover img {
+  transform: rotateY(20deg) scale(1.1);
+}

@@ -1,0 +1,140 @@
+
+/* SECTION */
+
+.contact {
+  position: relative;
+  padding: 80px 20px;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact-title {
+  font-size: clamp(28px, 3vw, 42px);
+  margin-bottom: 50px;
+}
+
+
+/* LAYOUT */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+
+/* LEFT */
+
+.contact-left {
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-left h3 {
+  margin-bottom: 10px;
+}
+
+.contact-left p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+
+/* FORM */
+
+.contact-right {
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #5a6bff, #6a91df);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}
+
+
+/* FLOATING SHAPES */
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* shape variations */
+.shape1 {
+  width: 120px;
+  height: 120px;
+  background: #5a6bff;
+  top: 10%;
+  left: 5%;
+}
+
+.shape2 {
+  width: 180px;
+  height: 180px;
+  background: #6a91df;
+  bottom: 10%;
+  right: 5%;
+}
+
+.shape3 {
+  width: 80px;
+  height: 80px;
+  background: #5a6bff;
+  top: 50%;
+  right: 20%;
+}
+
+/* animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+}

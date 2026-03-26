@@ -1,0 +1,22 @@
+.projects span {
+
+  color: rgb(3, 57, 108);
+}
+
+.projects .MuiTypography-root {
+  
+  font-size: clamp(17px, 6vw, 50px);
+}
+.projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}

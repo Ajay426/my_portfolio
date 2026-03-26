@@ -1,0 +1,36 @@
+.nevigationMenu{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.nevigationMenu li{
+    margin: 0px 20px;
+}
+.nevigationMenu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+ }
+
+ /* mobile view  */
+
+.mobile-navigation{
+ list-style-type: none;
+ 
+}
+
+
+.mobile-navigation li{
+   margin: 20px;
+
+}
+.mobile-navigation li a{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    font-size: 1.5rem;
+}
+
+.navbar{
+ background: linear-gradient(220deg, #dffaff,#7794b6);
+}

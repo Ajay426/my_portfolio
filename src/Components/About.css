@@ -1,0 +1,161 @@
+
+.about {
+  position: relative;
+  padding: 100px 20px;
+ 
+  overflow: hidden;
+  text-align: center;
+}
+
+/* title */
+.about-title {
+  font-size: clamp(30px, 3vw, 45px);
+  margin-bottom: 60px;
+}
+
+.about-title span {
+  color: #5a6bff;
+}
+
+/* LAYOUT */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+
+/* LEFT IMAGE */
+
+.about-left {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img-wrapper {
+  position: relative;
+  width: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.about-img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: linear-gradient(90deg, #9292d5, #6a91df);
+  border-radius: 30px;
+  z-index: -1;
+  filter: blur(20px);
+}
+
+/* image */
+.about-img-wrapper img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+/* RIGHT */
+
+.about-right {
+  max-width: 500px;
+  text-align: left;
+
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  
+}
+
+.about-right h3 {
+  margin-bottom: 10px;
+}
+
+.about-right p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* SKILLS */
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* bar */
+.bar {
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* fill */
+.fill {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #49494f, #6a91df);
+  animation: grow 1.5s ease forwards;
+}
+
+/* individual */
+.frontend { width: 85%; }
+.backend { width: 75%; }
+.database { width: 70%; }
+
+/* animation */
+@keyframes grow {
+  from { width: 0; }
+}
+
+/* FLOATING SHAPES */
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation:forwards 6s ease-in-out infinite;
+}
+
+.shape1 {
+  width: 150px;
+  height: 150px;
+  background: #5a6bff;
+  top: 10%;
+  left: 5%;
+}
+
+.shape2 {
+  width: 200px;
+  height: 200px;
+  background: #6a91df;
+  bottom: 10%;
+  right: 5%;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+}
