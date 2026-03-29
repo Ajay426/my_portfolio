@@ -11,7 +11,7 @@ export default function Footer() {
                 <Box sx={{
                     my: 3,
                     "& svg": {
-                        fontSize: "60px",
+                        fontSize: "40px",
                         cursor: "pointer",
                         mr: 2,
                     },

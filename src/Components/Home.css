@@ -144,3 +144,17 @@ img {
     padding: 0 140px;
   }
 }
+
+@media(max-width:500px){
+  .home .right img{
+    transition: none;
+    transform: none;
+  }
+
+  .right:hover .profile {
+  transform: none;
+
+  filter: drop-shadow(0 20px 40px rgba(47, 34, 193, 0.3));
+}
+
+}

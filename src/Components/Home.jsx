@@ -71,7 +71,7 @@ export default function Home() {
             {/* right side  */}
 
             <div className="right">
-               <StarBorderIcon />
+               
                <img src={profile} className="profile" />
 
             </div>
