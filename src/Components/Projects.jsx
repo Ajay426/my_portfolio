@@ -20,18 +20,21 @@ const projectsData = [
     title: "Dynamic Menu",
     desc: "This is a full-stack dynamic menu card application developed to help restaurant owners manage and update their menu in real time. The system allows admins to securely log in and modify menu items, with changes instantly reflected on the user interface without requiring a page refresh. It was built using React for the frontend, Node.js and Express for the backend, and PostgreSQL for database management. This solution addresses the problem of static menus by providing a flexible, real-time update mechanism.",
     img: menu,
+    demoUrl: "https://emenu-xi.vercel.app/",
   },
   {
     id: 2,
     title: "Portfolio Website",
     desc: "This is a personal portfolio website developed using React to showcase my projects, skills, and experience. The application features a responsive design with smooth animations and includes a contact functionality for direct communication.",
     img: portfolio,
+    demoUrl: "my-portfolio-khaki-two-15.vercel.app",
   },
   {
     id: 3,
     title: "EMI Calculator",
     desc: "A multi-functional calculator built using HTML, CSS, and JavaScript. It includes EMI, SIP, and standard calculator features along with a live clock for real-time interaction.",
     img: calculator,
+    demoUrl: " https://lnkd.in/dRuCMZ-Y",
   },
 ];
 
@@ -92,7 +95,15 @@ export default function Projects() {
                 </CardContent>
 
                 <CardActions>
-                  <Button size="small">Demo</Button>
+                  <Button
+                    size="small"
+                    component="a"
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </Button>
 
                   <Button size="small" onClick={() => handleToggle(project.id)}>
                     {isExpanded ? "Show Less" : "Learn More"}
