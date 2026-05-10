@@ -59,7 +59,7 @@ export default function Home() {
                      whileHover={{ scale: 1.07, y: -2 }}
                      whileTap={{ scale: 0.9, y: 1 }}
                      transition={{ type: "spring", stiffness: 300, damping: 7 }} variant="outlined" sx={{ marginRight: "15px", backgroundColor: "rgb(3,57,108)", color: "rgb(255, 255, 255)" }} onClick={() => navigate("/contact")} >Hire me</MotionButton>
-                  <a href='/AjayMahatoResume.pdf' download> <MotionButton
+                  <a href='/Ajay_Mahato_resume.pdf' download> <MotionButton
                      whileHover={{ scale: 1.07, y: -2 }}
                      whileTap={{ scale: 0.9, y: 1 }}
                      transition={{ type: "spring", stiffness: 300, damping: 7 }} variant="outlined">Download CV <ArrowDownwardIcon /></MotionButton></a>
